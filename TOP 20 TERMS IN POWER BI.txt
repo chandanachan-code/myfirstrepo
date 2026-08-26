@@ -1,0 +1,80 @@
+1. Table
+2. Fact tables(Tall and narrow)
+3. Dimension tables (Short and Wide)
+4. Calendar Table
+5. Star Schema (In a denormalised form, fairly used)
+6. Snowflake Schema (Normalised, occasionally used)
+7. Measure (Power BI term)
+8. Value (Excel Pivot Term)
+9. Aggregation (SQL term)
+10. Slicer
+11. Filter
+12. Model
+13. Cube 
+14. Data warehouse
+15. ETL (Extract, Transform, Load)
+16. Data Pipeline
+17. Query (power query)
+18.  Transform
+19. Batch
+20. Source and Refresh.
+
+
+TABLE: Atable is a collection of rows and columns.
+TYPES OF TABLE:
+FACT (tall &narrow)
+DIMENSION(short & wide)
+	>CALENDER TBL
+
+for eg: if we take a choco company data it consists of 
+sales tbl--date,coustomer id,product id,quantity ----this info refered here as fact tables
+customer tbl---customer id, customer name,phno
+product tbl ---product id, product name, cost  ---this is dimension table
+
+
+Relationship tables:
+many to one
+one to one
+many to many
+
+whenever there is a relationship,it is based on keys.
+
+keys:
+foreign key: used to link b/w two tbls
+primary key: refers to column in a tbl where info. is maintained
+
+Data modeling:
+STAR SCHEMA: refers to centeral fact table surrounded by multiple dimension tbls in outer edges. 
+SNOWFLAKE SCHEMA: refer to str schema and the outer dim tbl acts as central tbl and have multiple connections
+
+MEASURES & VALUES:
+MEASURE/aggrigation/value: refers to calculate the sum of particular coloumn
+
+eg: we have quantity in tble by measure we can calculate the sum of quantity
+
+slicer/filter: we can break those quantity into chunks and then calculate the sum.
+
+MODEL/CUBE/WHEREHOUSE:  COLLECTION OF ALL THE TABLES,MEASURES,RELATIONSHIPS IS KNOWN AS MODEL
+
+QUERYING/POWER QUERY: THE PROCESS OF GETTING DATA INTO DATA MODEL TOLL THROUGH SOME SERVER IS KNOWN AS QUERYING.
+
+>> sometimes we may transfer the data(change the shape/size/nature) as per needed it can be done directly in source system.
+
+OR CAN BE DONE THROUGH ETL(EXTRACT/TRANSFORM/LOAD): 
+EXTRACT- WHERE WE GO TO TWO DIFF SOURCE SYSTEMS AND COLLECT THE DATA
+TRANSFORM-change the shape/size/nature of data as per req.
+LOAD- loading final output data into reporting platform like power bi
+
+BATCH PROCESSING: A process that runs at a specefic point of time or when the specfic conditions are met and then it will run all etl proceeses,
+gives final output so u can update ur report.
+
+DATA PIPELINE:
+how ur getting data
+what happens to the data as it travells through pipeline before u generate ur report.
+
+SOURCE & REFRESH: 
+SOURCE: place where data is originally maintained.
+REFRESH: process where in updates the reports as per latest updates.
+ 
+
+ 
